@@ -1,0 +1,400 @@
+body {
+    background-color:rgb(59, 90, 107) ;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*.c1{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+header {
+    background-color:rgb(75, 71, 71);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+      
+section {
+    padding: 20px; /* espaciado para la sección de 20 pixeles */
+    flex: 1; /* Hace que esta sección ocupe el espacio disponible */
+}
+
+.logo {
+    display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */ 
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border: 3px solid rgb(238, 229, 229); /* Contorno de 3px con un color  alrededor de la img.*/
+    border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
+    box-shadow: inset 0 0 15px rgb(179, 172, 172), 0 0 30px rgb(179, 172, 172) ;
+    width: 25vw;  /* 50% del ancho */
+    height: 25vh; /* 50% del alto */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+.titulo{
+    font-family: 'Handjet', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;  
+    color: rgb(238, 229, 229);
+}
+
+.menu{
+    border: 2px solid rgb(238, 229, 229);
+    padding: 20px;
+    border-radius : 15px ;
+    max-width: 2500px;
+    box-shadow: inset 0 0 15px rgb(179, 172, 172), 0 0 30px rgb(179, 172, 172) ;
+    width: 60vw; /* Ancho del menú: 50% del ancho del viewport */
+    margin: auto;
+}
+
+/* Estilos para el nav y enlaces de ul y li */
+nav {
+    background-color: rgb(75, 71, 71);
+    padding: 10px;
+    }
+    
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}  
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color:#2d2a2e ;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor h2{
+    text-align: left;
+    font-size: 20px;
+   font-family: 'Handjet', cursive;
+    font-weight: bold;
+    font-style: italic; 
+    color: antiquewhite; 
+}
+
+.descripcion{
+    margin-right: 35px ;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.Dparrafo{
+    padding-top: auto;
+    padding-right: 150px;
+    flex: 1;
+    color: rgb(193, 139, 243);
+    font-weight: bold;
+    font-style: italic; 
+}
+
+.imagen{
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 3px solid black; /* Contorno de 3px con un color  alrededor de la img.*/
+    border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
+    box-shadow: inset 0 0 15px rgb(111, 3, 184), 0 0 30px rgb(111, 3, 184)  ;
+    width: 30vw;  
+    height: 35vh; 
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+.footer {
+    background-color: #2d2a2e; /* Color de fondo del footer */
+    padding: 10px ; 
+    margin-top: auto;
+    justify-content: space-between ;
+    display: flex;
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+    text-align: center;
+}
+
+.links img{
+    width: 35px;
+    margin-inline: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    color: antiquewhite;
+    text-align: right;
+    margin-top: 2vw;
+}
+/*--------------------------------------------------------------------------------------------*/
+.col {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centrar horizontalmente y agregar margen vertical */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.mv-4 {
+    margin-bottom: 1.5rem;
+}
+
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pt-5 {
+    padding-top: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-grid {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* Centrar el carrusel y ajustar el tamaño máximo */
+#carouselExample {
+    max-width: 700px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-radius: 5%;
+}
+
+/* Asegurarse de que las imágenes no ocupen toda la pantalla */
+.carousel-inner img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se comporte como bloque */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+    border-radius: 5%;
+}
+
+/* Ajustar los controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    width: 15%; /* Puedes ajustar este valor para cambiar el tamaño de los controles */
+}
+
+/* Opcional: Estilos adicionales para mejorar la apariencia */
+.carousel-item {
+    text-align: center; /* Centrar el contenido de cada item */
+    border-radius: 5%;
+}
+
+
+/*-----------------------------------arranca un nuevo proyecto-----------------------------------*/
+
+
+/*-----------------------------------header-----------------------------------*/
+
+.head_view{
+    background-color:rgb(20, 65, 93);
+    width: 100%;                  /* ancho */
+    height: 15vh;                 /* alto */
+    display: flex;               /* Utiliza Flexbox */
+    align-items: center;         /* Centrar verticalmente */
+    justify-content: center;     /* Centrar horizontalmente */
+    text-align: center;          /* Centrar texto dentro del contenedor flex */
+}
+
+/*-----------------------------------principal-----------------------------------*/
+
+.seccion_principal{
+    padding: 2%;
+    display: flex;               /* Utiliza Flexbox */
+    align-items: center;         /* Centrar verticalmente */
+    justify-content: center;     /* Centrar horizontalmente */
+    text-align: center;          /* Centrar texto dentro del contenedor flex */
+}
+
+/*-----------------------------------quienes somos-----------------------------------*/
+
+.quienes_somos{
+   padding: 2%;
+}
+
+.img_quienes_somos{
+    margin-left: 31%;
+    margin-right: 31%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    max-width: 100%;
+    width: 500px;
+}
+
+.quienes_somos h1{
+    text-align: center;
+}
+
+.quienes_somos h2{
+    text-align: center;
+}
+
+/*-------------------------------acerca de.------------------------------------*/
+
+.acerca_de{
+    margin: 5%;
+}
+
+.tituloServicio{
+    text-align: center;
+    font-size: 85px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+
+.asesoramiento h2{
+    text-align: left;
+    font-size: 50px;
+}
+
+.contenidoAsesoramiento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contenidoAsesoramiento h3{
+    flex: 1;
+    padding-right: 200px;
+    font-size: 30px;
+}
+
+.contenidoAsesoramiento img{
+    max-width: 100%;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.diseños h2{
+    text-align: right;
+    font-size: 50px;
+}
+
+.contenidoDiseños {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.contenidoDiseños h3{
+    flex: 1;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.contenidoDiseños img{
+    max-width: 100%;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.calidad h2{
+    text-align: left;
+    font-size: 50px;
+}
+
+.contenidoCalidad{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contenidoCalidad h3{
+    flex: 1;
+    padding-right: 60px;
+    font-size: 30px;
+}
+
+.contenidoCalidad img {
+    max-width: 100%;
+    width: 450px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
