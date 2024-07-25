@@ -16,13 +16,14 @@
     <img src="<?php echo base_url('assets/img/planos.jpg');?>" alt="IMG">
     <img src="<?php echo base_url('assets/img/reuniones.jpg');?>" alt="IMG">
     <img src="<?php echo base_url('assets/img/solo_nombre_y_logo.png');?>" alt="IMG">
--->   
+  
 
- 
+ -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/prueba.css">
 
-
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/prueba.css'); ?>">
 
 </head>
 
@@ -33,5 +34,5 @@
            
     </header>
    
-    <script src="assets/js/bootstrap.bundle.min.js" > </script>
+    <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
 
