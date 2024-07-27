@@ -22,7 +22,10 @@ use CodeIgniter\Debug\Toolbar\Collectors\Views;
  * `CI_DEBUG` is true, since if it's not, there's not much to display anyway.
  */
 class Toolbar extends BaseConfig
+
+
 {
+
     /**
      * --------------------------------------------------------------------------
      * Toolbar Collectors
