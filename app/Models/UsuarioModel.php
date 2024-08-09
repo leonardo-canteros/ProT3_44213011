@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class UsuarioModel extends Model {
     protected $table = 'usuarios';
-    protected $primaryKey = 'id_usuario'; // Corregido el error tipográfico
+    protected $primaryKey = 'id_usuario';
     protected $allowedFields = ['nombre', 'apellido', 'usuario', 'email', 'pass', 'perfil_id', 'baja', 'created_at'];
 
     // Método para obtener todos los usuarios

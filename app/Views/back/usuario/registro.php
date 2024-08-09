@@ -4,7 +4,7 @@
         <?php echo $validation->listErrors(); ?>
     </div>
 <?php endif; ?>
-<form action="<?php echo site_url('usuario_controller/create'); ?>" method="post">
+<form action="<?php echo site_url('UsuarioController/create'); ?>" method="post">
     <label for="nombre">Nombre</label>
     <input type="text" name="nombre" value="<?php echo set_value('nombre'); ?>"><br>
 
